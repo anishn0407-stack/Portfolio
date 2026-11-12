@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@keyframes scrollFwd {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRev {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+#toolbox-track {
+  animation: scrollFwd 25s linear infinite;
+}
+
+#toolbox-track1 {
+  animation: scrollRev 30s linear infinite;
+}
